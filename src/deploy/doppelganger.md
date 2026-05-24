@@ -104,7 +104,7 @@ expired="限制已解除"
 
 ::: tip <HopeIcon icon="people-pulling"/> 详细部署 
 
-- 目前开发者使用的是在 Docker 中，运行基于 [NapCat](https://napneko.github.io/) 框架的方案。
+- 目前开发者使用的是在 Docker 中，运行基于 [LLOneBot](https://github.com/LLOneBot/LLOneBot) 大礼包的方案。
 
 :::
 
@@ -112,13 +112,14 @@ expired="限制已解除"
 
 - 基于 Android XP 框架注入的 Shamrock：
   - 已经停止维护。
+  - 用了框架，我的古董机已经变成暖手宝了。
 - 基于 [Mirai](https://mirai.mamoe.net/) 的 [go-cqhttp](https://docs.go-cqhttp.org/)：
   - **不推荐**，作者已被腾讯传唤，并停止维护。
   - 如果您之前就使用了此解决方案，并且账号依旧可以登录 (未出现 Code 45)，可以直接在配置文件内的 `ws-reverse` 行，填入以上所述的[反向 WebSocket 代理链接](#brief)，完成部署。
-- 基于 HOOK QQNT 的方案 [LiteLoaderQQNT](https://liteloaderqqnt.github.io/) 搭配 [LLOneBot](https://github.com/LLOneBot/LLOneBot)：
-  - 最近在更新，或许可以试试。
+- 基于 HOOK QQNT 的方案 [LiteLoaderQQNT](https://liteloaderqqnt.github.io/) 搭配 [NapCat](https://napneko.github.io/) 框架：
+  - NapCat 特征几乎已经被锁定，建议不要试了。
 - 基于 C# 实现的 QQNT 消息协议库 [Lagrange.Core](https://lagrangedev.github.io/Lagrange.Doc/)：
-  - 拉格兰的仓库已经留档；拉格兰的签名服务器虽然仍在线，但已经不可用。
+  - 拉格兰的仓库已经留档，但是基于它的其他仓库可以试试。
 
 :::
 

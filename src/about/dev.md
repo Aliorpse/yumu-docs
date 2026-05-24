@@ -7,17 +7,9 @@ order: 2
 ---
 ```card
 title: Muziyami
-desc: 项目主负责人、功能设计、算法设计、美术设计、产品、运维、测试、前端、后端、百科维护</br>联系方式：QQ：1340691940
+desc: 全干工程师 (Anything-Stack Engineer)、首席 Bug 孵化官 (Chief Bug Incubator / CBI)、野指针架构师 (Wild-Pointer Architect)、代码和人只要有一个能跑就行™保障专员</br>联系方式：QQ：1340691940
 logo: https://a.ppy.sh/7003013
 link: https://osu.ppy.sh/users/7003013
-color: rgba(253,230,138,0.15)
-```
-
-```card
-title: SIyuyuko
-desc: 产品、运维、网站前端</br>联系方式：QQ：3228981717
-logo: https://a.ppy.sh/9794030
-link: https://osu.ppy.sh/users/9794030
 color: rgba(253,230,138,0.15)
 ```
 
@@ -30,16 +22,8 @@ color: rgba(245,177,153,0.15)
 ```
 
 ```card
-title: Truncle
-desc: 后端、开发 PPM 逻辑</br>联系方式：QQ：1968035918
-logo: https://a.ppy.sh/14218879
-link: https://osu.ppy.sh/users/14218879
-color: rgba(253,230,138,0.15)
-```
-
-```card
 title: Shiratori (ZhongRen)
-desc: 后端、Discord 对接</br>联系方式：QQ：732713726
+desc: Discord 功能开发</br>联系方式：QQ：732713726
 logo: https://a.ppy.sh/6263426
 link: https://osu.ppy.sh/users/6263426
 color: rgba(253,230,138,0.15)
@@ -61,6 +45,29 @@ link: https://osu.ppy.sh/users/13184288
 color: rgba(193,216,172,0.15)
 ```
 
+```card
+title: SIyuyuko
+desc: 产品、运维、网站前端</br>联系方式：QQ：3228981717
+logo: https://a.ppy.sh/9794030
+link: https://osu.ppy.sh/users/9794030
+color: rgba(253,230,138,0.15)
+```
+
+```card
+title: yang_12345
+desc: 猜歌功能开发</br>联系方式：QQ：1716437252
+logo: https://a.ppy.sh/33804348
+link: https://osu.ppy.sh/users/33804348
+color: rgba(253,230,138,0.15)
+```
+
+```card
+title: Truncle
+desc: PPM 逻辑开发</br>联系方式：QQ：1968035918
+logo: https://a.ppy.sh/14218879
+link: https://osu.ppy.sh/users/14218879
+color: rgba(253,230,138,0.15)
+```
 
 <script>
 if (typeof document !== 'undefined') {

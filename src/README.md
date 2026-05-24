@@ -25,5 +25,5 @@ actions:
   - text: 🐞 关于
     link: ./about/
 copyright: false
-footer: 使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a> 主题 | © 2021-2026 YumuBot, All Rights Reserved.
+footer: 使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a> 主题 | © 2021-now YumuBot, All Rights Reserved.
 ---
