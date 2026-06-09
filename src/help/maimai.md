@@ -76,9 +76,8 @@ copyright: false
 
 **使用方法**
 
-!ymmaimaiscore / ms (**玩家名**) (**(**框体类型**)歌曲名称 / 歌曲编号 / 定数或范围**) (**查询条件**) (**`#`页码**)
+!ymmaimaiscore / ms (**(**框体类型**)歌曲名称 / 歌曲编号 / 定数或范围**) (**查询条件**) (**`*`玩家名**) (**`#`页码**)
 
-- **<HopeIcon icon="address-card"/> 玩家名**：同上。
 - **<HopeIcon icon="rainbow"/> 乐谱类型**：在输入歌曲名称时，允许按乐谱类型查询。
   - 支持输入标准（SD、standard）、豪华（DX、deluxe）。留空默认按歌曲支持的乐谱类型查询。
   - 如果有多个乐谱，则会按查询玩家的最高评分 (DX rating) 成绩所属的乐谱种类查询。
@@ -104,6 +103,7 @@ copyright: false
       - 12-12.4：12.0-12.4
       - 13.4-13+：13.4-13.9（带 `+` 号不管怎么样都会被等价为 .6-.9，这里取最大值） 
 - **<HopeIcon icon="filter"/> 查询条件**：请参阅：[<HopeIcon icon="filter"/> 查询条件·舞萌成绩查询器](./filter.md#maimai)
+- **<HopeIcon icon="address-card"/> 玩家名**：同上。
 - **<HopeIcon icon="file"/> 页码**：当前所在的页面编号。
   - 不输入默认第一页。一页 50 个结果。
 
