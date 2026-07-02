@@ -17,16 +17,16 @@ copyright: false
 
 # 自定指令
 
-## <HopeIcon icon="pen"/> 1 上传自定元素 !ymcustom (!c) {id=custom}
+## ::pen:: 1 上传自定元素 !ymcustom (!c) {id=custom}
 
 **使用方法**
 
 !ymcustom / c (**`:`操作**) (**种类**)
-- (**<HopeIcon icon="table-list"/> 操作**)：保存或是删除。
-  - 可以输入 <HopeIcon icon="download"/> 保存 (save, add) 或 <HopeIcon icon="trash-can"/> 删除 (clear, delete, remove)，或者 s, a, c, d, r。
+- (**::table-list:: 操作**)：保存或是删除。
+  - 可以输入 ::download:: 保存 (save, add) 或 ::trash-can:: 删除 (clear, delete, remove)，或者 s, a, c, d, r。
   - 不输入，默认保存。
   - 如果想要删除自定义图片，可无需发送==回复==类型（如以下绿色的提示部分所示）的消息。
-- (**<HopeIcon icon="table-list"/> 种类**)：想要自定义的种类。
+- (**::table-list:: 种类**)：想要自定义的种类。
   - 可以输入横幅 (banner) 或卡片 (card)，或者 b, c。
   - 不输入，默认 banner。
 

@@ -65,11 +65,12 @@ export default hopeTheme({
         slimsearch: true,
 
         search: false,
+
+        icon: {
+            assets: "fontawesome", prefix: ""
+        },
     },
 
-    icons: {
-        assets: "fontawesome", prefix: ""
-    },
 
     markdown: {
         align: true,
@@ -78,7 +79,6 @@ export default hopeTheme({
         echarts: true,
         figure: true,
         flowchart: true,
-        gfm: true,
         imgLazyload: true,
         imgSize: true,
         include: true,

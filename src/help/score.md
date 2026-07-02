@@ -18,24 +18,24 @@ copyright: false
 
 # 成绩指令
 
-## <HopeIcon icon="list"/> 1 绑定游戏模式 !ymmode (!sm) {id=mode}
+## ::list:: 1 绑定游戏模式 !ymmode (!sm) {id=mode}
 
-如果玩家==绑定==了 <HopeIcon icon="gamepad"/> 游戏模式，那么在之后，玩家想要使用包含游戏模式参数的功能时，不需要通过输入 `:` + <HopeIcon icon="gamepad"/> 游戏模式的方式来设定参数。机器人会==自动为您补齐==。
+如果玩家==绑定==了 ::gamepad:: 游戏模式，那么在之后，玩家想要使用包含游戏模式参数的功能时，不需要通过输入 `:` + ::gamepad:: 游戏模式的方式来设定参数。机器人会==自动为您补齐==。
 
 **使用方法**
 
 !ymmode / !sm / !mo (**游戏模式**)
 
-- **<HopeIcon icon="gamepad"/> 游戏模式**：选填，需要绑定的 <HopeIcon icon="gamepad"/> 游戏模式。可输入：
-  - osu / o / 0：<HopeIcon icon="circle-dot"/> 主模式，osu!standard，osu!std
-  - taiko / t / 1：<HopeIcon icon="drum"/> 太鼓模式，osu!taiko
-  - catch / fruits / c / 2：<HopeIcon icon="apple-whole"/> 接水果模式，osu!catch
-  - mania / m / 3：<HopeIcon icon="keyboard"/> 下落模式，键盘模式，osu!mania
+- **::gamepad:: 游戏模式**：选填，需要绑定的 ::gamepad:: 游戏模式。可输入：
+  - osu / o / 0：::circle-dot:: 主模式，osu!standard，osu!std
+  - taiko / t / 1：::drum:: 太鼓模式，osu!taiko
+  - catch / fruits / c / 2：::apple-whole:: 接水果模式，osu!catch
+  - mania / m / 3：::keyboard:: 下落模式，键盘模式，osu!mania
   - 如果不输入，则会移除玩家绑定的游戏模式。此时其他功能会尝试获取玩家主页的默认游戏模式。
 
 ::: tip 提示
 
-在这里绑定的 <HopeIcon icon="gamepad"/> 游戏模式，可以与玩家主页的默认游戏模式，或者玩家在其他机器人内绑定的游戏模式不同。
+在这里绑定的 ::gamepad:: 游戏模式，可以与玩家主页的默认游戏模式，或者玩家在其他机器人内绑定的游戏模式不同。
 
 这在同时使用多种机器人查询成绩时尤其有用。比如仅在本机器人下查询接水果模式成绩，在其他机器人下查询主模式成绩等。
 
@@ -44,15 +44,15 @@ copyright: false
 :::
 
 
-## <HopeIcon icon="list-check"/> 2 绑定群聊游戏模式 !ymgroupmode (!gm) {id=groupmode}
+## ::list-check:: 2 绑定群聊游戏模式 !ymgroupmode (!gm) {id=groupmode}
 
-如果群聊==绑定==了 <HopeIcon icon="gamepad"/> 游戏模式，那么在之后，玩家想要使用包含游戏模式参数的功能时，不需要通过输入 `:` + <HopeIcon icon="gamepad"/> 游戏模式的方式来设定参数。机器人会==自动为您补齐==。
+如果群聊==绑定==了 ::gamepad:: 游戏模式，那么在之后，玩家想要使用包含游戏模式参数的功能时，不需要通过输入 `:` + ::gamepad:: 游戏模式的方式来设定参数。机器人会==自动为您补齐==。
 
 **使用方法**
 
 !ymsetgroupmode / !gm (**游戏模式**)
 
-- **<HopeIcon icon="gamepad"/> 游戏模式**：选填，需要绑定的 <HopeIcon icon="gamepad"/> 游戏模式。同上。
+- **::gamepad:: 游戏模式**：选填，需要绑定的 ::gamepad:: 游戏模式。同上。
   - 如果不输入，则会移除群聊绑定的游戏模式。此时其他功能会尝试获取玩家绑定的游戏模式，或是玩家主页的默认游戏模式。
 
 ::: warning 注意
@@ -76,7 +76,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="square-check"/> 3 查询最近通过成绩 !ympass (!p) {id=pass}
+## ::square-check:: 3 查询最近通过成绩 !ympass (!p) {id=pass}
 
 这个功能只会查询到有效（通过）的成绩。
 
@@ -84,17 +84,17 @@ copyright: false
 
 !ympass / p (**s**) (**`:`游戏模式**) (**玩家名**) (**查询条件**) (**`#`偏移量或区间**)
 
-- **<HopeIcon icon="s"/> 多成绩**：如果这里添加了字母 `s`，Bot 会识别为多成绩模式。
+- **::s:: 多成绩**：如果这里添加了字母 `s`，Bot 会识别为多成绩模式。
   - 如果不输入任何参数，也能获取最近 20 个通过成绩（等价于 !p 1-20）。
   - 此时，只需要输入偏移量。但是如果输入的是区间，那么加或不加 `s` 没什么区别（==!ps 100 = !p 1-100 = !ps 1-100==）。
   - 如果使用了 !ympass 或者 !pass，则后面需要加 `es`（毕竟英文复数就是这样），!p 后面只需要加 `s`。
-- **<HopeIcon icon="gamepad"/> 游戏模式**：需要设定的默认游戏模式。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
-- **<HopeIcon icon="address-card"/> 玩家名**：需要查询的玩家名称。留空默认查询自己。
-  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
-  - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
-  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@nana7michan。
-- **<HopeIcon icon="filter"/> 查询条件**：请参阅：[<HopeIcon icon="filter"/> 查询条件·成绩查询器](./filter.md#score)
-- **<HopeIcon icon="ruler-horizontal"/> 偏移量或区间**：需要查询从新到老排序中的第几个或是某几个成绩。
+- **::gamepad:: 游戏模式**：需要设定的默认游戏模式。请参阅：[::gamepad:: 游戏模式](#mode)
+- **::address-card:: 玩家名**：需要查询的玩家名称。留空默认查询自己。
+  - 支持使用 ::icon fa-brands fa-qq:: QQ 查询，输入格式为：qq=114514。
+  - 支持使用 ::slash:: UID 查询，输入格式为：uid=1919810。
+  - 支持使用 ::at:: @ 查询，输入格式为：@nana7michan。
+- **::filter:: 查询条件**：请参阅：[::filter:: 查询条件·成绩查询器](./filter.md#score)
+- **::ruler-horizontal:: 偏移量或区间**：需要查询从新到老排序中的第几个或是某几个成绩。
   - 可以输入 1~100 之间的整数，输入 2，就是查询最近的通过成绩的前一个通过成绩。
   - 可以输入区间，格式为：最小数`-`最大数，如 1-20。
   - 如果输入 0，则默认为 1~100。
@@ -130,7 +130,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="square-xmark"/> 4 查询最近成绩 !ymrecent (!r) {id=recent}
+## ::square-xmark:: 4 查询最近成绩 !ymrecent (!r) {id=recent}
 
 这个功能同上，但可以查询到失败的成绩。
 
@@ -138,16 +138,16 @@ copyright: false
 
 !ymrecent / r (**s**) (**`:`游戏模式**) (**玩家名**) (**查询条件**) (**`#`偏移量或区间**)
 
-- **<HopeIcon icon="s"/> 多成绩**：如果这里添加了字母 `s`，Bot 会识别为多成绩模式。
+- **::s:: 多成绩**：如果这里添加了字母 `s`，Bot 会识别为多成绩模式。
   - 如果不输入任何参数，也能获取最近 20 个成绩（等价于 !r 1-20）。
   - 此时，只需要输入偏移量。但是如果输入的是区间，那么加或不加 `s` 没什么区别（==!rs 100 = !r 1-100 = !rs 1-100==）。
-- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
-- **<HopeIcon icon="address-card"/> 玩家名**：同上。
-  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
-  - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
-  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@nana7michan。
-- **<HopeIcon icon="filter"/> 查询条件**：请参阅：[<HopeIcon icon="filter"/> 查询条件·成绩查询器](./filter.md#score)
-- **<HopeIcon icon="ruler-horizontal"/> 偏移量或区间**：需要查询从新到老排序中的第几个或是某几个成绩。
+- **::gamepad:: 游戏模式**：同上。请参阅：[::gamepad:: 游戏模式](#mode)
+- **::address-card:: 玩家名**：同上。
+  - 支持使用 ::icon fa-brands fa-qq:: QQ 查询，输入格式为：qq=114514。
+  - 支持使用 ::slash:: UID 查询，输入格式为：uid=1919810。
+  - 支持使用 ::at:: @ 查询，输入格式为：@nana7michan。
+- **::filter:: 查询条件**：请参阅：[::filter:: 查询条件·成绩查询器](./filter.md#score)
+- **::ruler-horizontal:: 偏移量或区间**：需要查询从新到老排序中的第几个或是某几个成绩。
   - 可以输入 1~100 之间的整数，输入 2，就是查询最近成绩的前一个成绩。
   - 可以输入区间，格式为：最小数`-`最大数，如 1-20。
   - 如果输入 0，则默认为 1~100。
@@ -170,7 +170,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="pager"/> 5 查询谱面成绩 !ymscore (!s) {id=score}
+## ::pager:: 5 查询谱面成绩 !ymscore (!s) {id=score}
 
 这个功能可以查询到谱面上任何成绩（只要有）。
 
@@ -178,21 +178,21 @@ copyright: false
 
 !ymscore / s (**s**) (**`:`游戏模式**) (**谱面编号或成绩编号**) (**玩家名**) (**`+`模组名称**)
 
-- **<HopeIcon icon="s"/> 多成绩**：如果这里添加了字母 `s`，Bot 会识别为多成绩模式。
+- **::s:: 多成绩**：如果这里添加了字母 `s`，Bot 会识别为多成绩模式。
   - 默认获取谱面所有纳入统计的成绩。
-- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
-- **<HopeIcon icon="hashtag"/> 谱面编号或成绩编号**：需要查询的谱面编号 (BID) 或成绩编号 (SCORE_ID)。
+- **::gamepad:: 游戏模式**：同上。请参阅：[::gamepad:: 游戏模式](#mode)
+- **::hashtag:: 谱面编号或成绩编号**：需要查询的谱面编号 (BID) 或成绩编号 (SCORE_ID)。
   - 如果不输入编号，则优先获取之前查询的历史记录，从而获取到玩家在之前查询谱面内的 pp 最高成绩。
     - 如果没有之前查询的历史记录，则默认获取玩家最近成绩的谱面，从而获取到玩家在谱面内的 pp 最高成绩（类似于 !r)。
   - 如果输入成绩编号，则其他参数均无效（因为一个成绩编号只对应一个确定的成绩）。
     - 默认将编号 100000000 及以上视为成绩编号，而 100000000 以下的会被视为谱面编号。
     - 编号 100000000 的成绩是一个 2013 年的成绩。因此，对于在这之前的成绩，暂时无法通过成绩编号查询。
-- **<HopeIcon icon="address-card"/> 玩家名**：同上。
-  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
-  - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
-  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@nana7michan。
-- **<HopeIcon icon="music"/> 模组名称**：<HopeIcon icon="music"/> 模组的简称，通常为两位大写字母组成。可以无空格地输入多个 <HopeIcon icon="music"/> 模组。
-  - 可输入的 <HopeIcon icon="music"/> 模组名称：EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
+- **::address-card:: 玩家名**：同上。
+  - 支持使用 ::icon fa-brands fa-qq:: QQ 查询，输入格式为：qq=114514。
+  - 支持使用 ::slash:: UID 查询，输入格式为：uid=1919810。
+  - 支持使用 ::at:: @ 查询，输入格式为：@nana7michan。
+- **::music:: 模组名称**：::music:: 模组的简称，通常为两位大写字母组成。可以无空格地输入多个 ::music:: 模组。
+  - 可输入的 ::music:: 模组名称：EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 ```flow:preset
 
@@ -240,7 +240,7 @@ cond4(no)->op7->e
 
 :::
 
-## <HopeIcon icon="rainbow"/> 6 查询最好成绩 !ymbestperformance (!b) {id=bestperformance}
+## ::rainbow:: 6 查询最好成绩 !ymbestperformance (!b) {id=bestperformance}
 
 这个功能可以查询到玩家最好成绩榜（BP）上的成绩。
 
@@ -248,16 +248,16 @@ cond4(no)->op7->e
 
 !ymbp / b (**s**) (**`:`游戏模式**) (**玩家名**) (**查询条件**) (**`#`偏移量或区间**)
 
-- **<HopeIcon icon="s"/> 多成绩**：如果这里添加了字母 `s`，Bot 会识别为多成绩模式。
+- **::s:: 多成绩**：如果这里添加了字母 `s`，Bot 会识别为多成绩模式。
   - 如果不输入任何参数，也能获取前 20 个最好成绩（等价于 !b 1-20）。
   - 此时，只需要输入偏移量。但是如果输入的是区间，那么加或不加 `s` 没什么区别（==!bs 100 = !b 1-100 = !bs 1-100==）。
-- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
-- **<HopeIcon icon="address-card"/> 玩家名**：同上。
-  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
-  - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
-  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@nana7michan。
-- **<HopeIcon icon="filter"/> 查询条件**：请参阅：[<HopeIcon icon="filter"/> 查询条件·成绩查询器](./filter.md#score)
-- **<HopeIcon icon="ruler-horizontal"/> 偏移量或区间**：需要查询从头到尾排序中的第几个或是某几个成绩。
+- **::gamepad:: 游戏模式**：同上。请参阅：[::gamepad:: 游戏模式](#mode)
+- **::address-card:: 玩家名**：同上。
+  - 支持使用 ::icon fa-brands fa-qq:: QQ 查询，输入格式为：qq=114514。
+  - 支持使用 ::slash:: UID 查询，输入格式为：uid=1919810。
+  - 支持使用 ::at:: @ 查询，输入格式为：@nana7michan。
+- **::filter:: 查询条件**：请参阅：[::filter:: 查询条件·成绩查询器](./filter.md#score)
+- **::ruler-horizontal:: 偏移量或区间**：需要查询从头到尾排序中的第几个或是某几个成绩。
   - 可以输入 1~200 之间的整数，输入 102 就是查询第 102 个最好成绩。
   - 可以输入区间，格式为：最小数`-`最大数，如 1-20。
   - 如果输入 0，则默认为 1~100。
@@ -282,7 +282,7 @@ cond4(no)->op7->e
 
 :::
 
-## <HopeIcon icon="podcast"/> 7 查询今日最好成绩 !ymtodaybp (!t) {id=todaybp}
+## ::podcast:: 7 查询今日最好成绩 !ymtodaybp (!t) {id=todaybp}
 
 这个功能可以查询到玩家今天（或直到距今天多少天前）最好成绩榜（BP）上新增的成绩。
 
@@ -290,12 +290,12 @@ cond4(no)->op7->e
 
 !ymtodaybp / t (**`:`游戏模式**) (**玩家名**) (**`#`天数**)
 
-- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
-- **<HopeIcon icon="address-card"/> 玩家名**：同上。
-  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
-  - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
-  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@nana7michan。
-- **<HopeIcon icon="calendar-days"/> 天数**：查询距今多少天内，玩家新增的最好成绩。
+- **::gamepad:: 游戏模式**：同上。请参阅：[::gamepad:: 游戏模式](#mode)
+- **::address-card:: 玩家名**：同上。
+  - 支持使用 ::icon fa-brands fa-qq:: QQ 查询，输入格式为：qq=114514。
+  - 支持使用 ::slash:: UID 查询，输入格式为：uid=1919810。
+  - 支持使用 ::at:: @ 查询，输入格式为：@nana7michan。
+- **::calendar-days:: 天数**：查询距今多少天内，玩家新增的最好成绩。
   - 可以输入 1~999 之间的整数。输入 30 就是距今 30 天内。
 
 ::: warning 注意
@@ -322,7 +322,7 @@ cond4(no)->op7->e
 
 
 
-## <HopeIcon icon="clock"/> 8 查询最近较好成绩 !ymrecentbest (!rb) {id=recentbest}
+## ::clock:: 8 查询最近较好成绩 !ymrecentbest (!rb) {id=recentbest}
 
 这个功能可以从数据库中获取玩家 7 天之内表现较好的成绩。
 
@@ -332,13 +332,13 @@ cond4(no)->op7->e
 
 !ymrecentbest / rb (**`:`游戏模式**) (**玩家名**)
 
-- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
-- **<HopeIcon icon="address-card"/> 玩家名**：同上。
-  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
-  - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
-  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@nana7michan。
+- **::gamepad:: 游戏模式**：同上。请参阅：[::gamepad:: 游戏模式](#mode)
+- **::address-card:: 玩家名**：同上。
+  - 支持使用 ::icon fa-brands fa-qq:: QQ 查询，输入格式为：qq=114514。
+  - 支持使用 ::slash:: UID 查询，输入格式为：uid=1919810。
+  - 支持使用 ::at:: @ 查询，输入格式为：@nana7michan。
 
-## <HopeIcon icon="chart-pie"/> 9 分析最好成绩 !ymbpanalysis (!ba) {id=bpanalysis}
+## ::chart-pie:: 9 分析最好成绩 !ymbpanalysis (!ba) {id=bpanalysis}
 
 这个功能可以分析玩家的最好成绩榜，从而判断玩家目前的状态，以及玩家的偏好或技巧。
 
@@ -346,11 +346,11 @@ cond4(no)->op7->e
 
 !ymbpanalysis / ba (**`:`游戏模式**) (**玩家名**)
 
-- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
-- **<HopeIcon icon="address-card"/> 玩家名**：同上。
-  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
-  - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
-  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@nana7michan。
+- **::gamepad:: 游戏模式**：同上。请参阅：[::gamepad:: 游戏模式](#mode)
+- **::address-card:: 玩家名**：同上。
+  - 支持使用 ::icon fa-brands fa-qq:: QQ 查询，输入格式为：qq=114514。
+  - 支持使用 ::slash:: UID 查询，输入格式为：uid=1919810。
+  - 支持使用 ::at:: @ 查询，输入格式为：@nana7michan。
 
 ![分析最好成绩面板，指令：!ba:2 nene sakura](https://yumemuzi.s-ul.eu/yumu/4ZAavzi5)
 
@@ -396,7 +396,7 @@ cond4(no)->op7->e
 
 :::
 
-## <HopeIcon icon="hammer"/> 10 修补最好成绩 !ymbpfix (!bf) {id=bpfix}
+## ::hammer:: 10 修补最好成绩 !ymbpfix (!bf) {id=bpfix}
 
 这个功能可以分析玩家的最好成绩榜，抽出玩家的不完美 (choke) 成绩，并预测当这些成绩被修补成全连 (full combo) 后，玩家能获得多少表现分。
 
@@ -404,13 +404,13 @@ cond4(no)->op7->e
 
 !ymbpfix / bf (**`:`游戏模式**) (**玩家名**)
 
-- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
-- **<HopeIcon icon="address-card"/> 玩家名**：同上。
-  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
-  - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
-  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@nana7michan。
+- **::gamepad:: 游戏模式**：同上。请参阅：[::gamepad:: 游戏模式](#mode)
+- **::address-card:: 玩家名**：同上。
+  - 支持使用 ::icon fa-brands fa-qq:: QQ 查询，输入格式为：qq=114514。
+  - 支持使用 ::slash:: UID 查询，输入格式为：uid=1919810。
+  - 支持使用 ::at:: @ 查询，输入格式为：@nana7michan。
 
-## <HopeIcon icon="crown"/> 11 查询顶流成绩 !ymtopplays (!tp) {id=topplays}
+## ::crown:: 11 查询顶流成绩 !ymtopplays (!tp) {id=topplays}
 
 这个功能可以查询全服 pp 最高的成绩。
 
@@ -418,9 +418,9 @@ cond4(no)->op7->e
 
 !ymtopplays / tp (**`:`游戏模式**) (`#`**页码**)
 
-- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
+- **::gamepad:: 游戏模式**：同上。请参阅：[::gamepad:: 游戏模式](#mode)
   - 不输入默认查询 osu!standard 模式。
-- **<HopeIcon icon="file"/> 页码**：当前所在的页面编号。
+- **::file:: 页码**：当前所在的页面编号。
   - 不输入默认第一页。一页 50 个结果。最大可输入 20 页（前 1000）
 
 ::: tip 提示

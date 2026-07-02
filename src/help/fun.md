@@ -19,7 +19,7 @@ copyright: false
 
 # 娱乐指令
 
-## <HopeIcon icon="dice"/> 1 扔骰子 !ymdice (!d) {id=dice}
+## ::dice:: 1 扔骰子 !ymdice (!d) {id=dice}
 
 ::: danger 免责声明
 
@@ -42,9 +42,9 @@ copyright: false
 **使用方法**
 
 !ymdice / d (**数字**) (**决定**)
-- (**<HopeIcon icon="dice-six"/> 数字**)：想要限制的点数大小。
+- (**::dice-six:: 数字**)：想要限制的点数大小。
   - 不输入默认 100 点。
-- (**<HopeIcon icon="person-praying"/> 决定**)：想要让 Bot 做的决定。
+- (**::person-praying:: 决定**)：想要让 Bot 做的决定。
   - 支持含有中文常见关联词的句子。也支持部分英文。
   - 允许的句式有：
     - 多选：是享受游戏还是关闭游戏还是刷 PP？
@@ -78,20 +78,20 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="guitar"/> 2 猜歌游戏 !ymguess (!g) {id=guess}
+## ::guitar:: 2 猜歌游戏 !ymguess (!g) {id=guess}
 
 **使用方法**
 
 !ymguess / g (**`:`游戏模式**) (**字母**)/(**猜测**)/(**玩家名**) (**`#`编号**)
-- **<HopeIcon icon="gamepad"/> 游戏模式**：启动猜歌时，想要猜测的游戏模式。
+- **::gamepad:: 游戏模式**：启动猜歌时，想要猜测的游戏模式。
   - 不输入默认玩家的绑定模式，以及玩家的默认游戏模式。
-- **<HopeIcon icon="a"/> 字母**：想要展示的字母。
-- **<HopeIcon icon="magnifying-glass"/> 猜测**：想要猜测的结果。
-- **<HopeIcon icon="address-card"/> 玩家名**：启动猜歌时，提供猜歌来源的玩家。不输入时默认自己。
-  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 提供，输入格式为：qq=114514。
-  - 支持使用 <HopeIcon icon="slash"/> UID 提供，输入格式为：uid=1919810。
-  - 支持使用 <HopeIcon icon="at"/> @ 提供，输入格式为：@nana7michan。
-- **<HopeIcon icon="lightbulb"/> 编号**：在前面的参数均不输入时，输入编号可以获取对应题目的提示。
+- **::a:: 字母**：想要展示的字母。
+- **::magnifying-glass:: 猜测**：想要猜测的结果。
+- **::address-card:: 玩家名**：启动猜歌时，提供猜歌来源的玩家。不输入时默认自己。
+  - 支持使用 ::icon fa-brands fa-qq:: QQ 提供，输入格式为：qq=114514。
+  - 支持使用 ::slash:: UID 提供，输入格式为：uid=1919810。
+  - 支持使用 ::at:: @ 提供，输入格式为：@nana7michan。
+- **::lightbulb:: 编号**：在前面的参数均不输入时，输入编号可以获取对应题目的提示。
 
 ![猜歌面板，指令：!g:o muziyami](https://yumemuzi.s-ul.eu/yumu/b4rUXHt4)
 

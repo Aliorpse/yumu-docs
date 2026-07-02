@@ -28,7 +28,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="volume-down"/> 1 试听舞萌歌曲 !ymmaimaiaudio (!xa) {id=maiaudio}
+## ::volume-down:: 1 试听舞萌歌曲 !ymmaimaiaudio (!xa) {id=maiaudio}
 
 这个功能可以试听某首舞萌内的歌曲。
 
@@ -36,10 +36,10 @@ copyright: false
 
 !ymmaimaiaudio / xa (**歌曲名称**)
 
-- **<HopeIcon icon="address-card"/> 歌曲名称**：需要试听的歌曲名。
+- **::address-card:: 歌曲名称**：需要试听的歌曲名。
 
 
-## <HopeIcon icon="wand-magic-sparkles"/> 2 查询舞萌最好成绩 !ymmaimaibest (!x) {id=maibest}
+## ::wand-magic-sparkles:: 2 查询舞萌最好成绩 !ymmaimaibest (!x) {id=maibest}
 
 这个功能可以查询到玩家最好成绩榜（b50）上的成绩。
 
@@ -47,13 +47,13 @@ copyright: false
 
 !ymmaimaibest / mai / mb / x (**玩家名**) (**`#`偏移量或区间**)
 
-- **<HopeIcon icon="address-card"/> 玩家名**：需要查询的玩家名称。留空默认使用发送者的 QQ 查询。
+- **::address-card:: 玩家名**：需要查询的玩家名称。留空默认使用发送者的 QQ 查询。
   - 这里的玩家名是玩家在[==水鱼官网==](https://www.diving-fish.com/maimaidx/prober/)上的账号名。
     - 可以输入特殊字符或中文（如果玩家名内有）。
-  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
+  - 支持使用 ::icon fa-brands fa-qq:: QQ 查询，输入格式为：qq=114514。
     - 如果您查询自己的成绩时显示未绑定，则可以前往[==水鱼官网==](https://www.diving-fish.com/maimaidx/prober/)，登录，点击右上角的 `编辑个人资料` ，最后在 `绑定 QQ` 段落填写自己的 QQ。
-  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@某S氏。
-- **<HopeIcon icon="ruler-horizontal"/> 偏移量或区间**：需要查询从头到尾排序中的第几个或是某几个成绩。
+  - 支持使用 ::at:: @ 查询，输入格式为：@某S氏。
+- **::ruler-horizontal:: 偏移量或区间**：需要查询从头到尾排序中的第几个或是某几个成绩。
   - 可以输入 1~50 之间的整数，输入 2 就是查询第二个最好成绩。
   - 如果不输入任何参数，即可获取玩家的 50 个最好成绩（等价于其他同类机器人的 b50 功能）。
   - 1~35 为过去版本中的前 35 个最好成绩 (b35)，36-50 为最新版本中的前 15 个最好成绩 (b15)。
@@ -70,7 +70,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="magnifying-glass"/> 3 查询舞萌歌曲成绩 !ymmaimaiscore (!ms) {id=maiscore}
+## ::magnifying-glass:: 3 查询舞萌歌曲成绩 !ymmaimaiscore (!ms) {id=maiscore}
 
 这个功能可以按歌曲名或歌曲编号，查询到玩家在特定歌曲内的成绩（以及歌曲音符信息）。
 
@@ -78,10 +78,10 @@ copyright: false
 
 !ymmaimaiscore / ms (**(**框体类型**)歌曲名称 / 歌曲编号 / 定数或范围**) (**查询条件**) (**`*`玩家名**) (**`#`页码**)
 
-- **<HopeIcon icon="rainbow"/> 乐谱类型**：在输入歌曲名称时，允许按乐谱类型查询。
+- **::rainbow:: 乐谱类型**：在输入歌曲名称时，允许按乐谱类型查询。
   - 支持输入标准（SD、standard）、豪华（DX、deluxe）。留空默认按歌曲支持的乐谱类型查询。
   - 如果有多个乐谱，则会按查询玩家的最高评分 (DX rating) 成绩所属的乐谱种类查询。
-- **<HopeIcon icon="address-card"/> 歌曲名称**：三选一填，需要查询的歌曲名。
+- **::address-card:: 歌曲名称**：三选一填，需要查询的歌曲名。
   - 支持输入简中社区常用的外号（俗称）。	
     - 外号库来自[这里](https://maimai.lxns.net/alias/vote)。
   - 支持输入日文汉字，以及平假名片假名的罗马字。
@@ -90,9 +90,9 @@ copyright: false
   - 比如：需要查询 **幻想のサテライト** 这首歌的信息，
     - 您可以尝试：幻想的卫星、幻想、サテライト、sateraito、10319、319。
     - 不能输入：banshou、satellite。
-- **<HopeIcon icon="hashtag"/> 歌曲编号**：三选一填，需要查询的歌曲编号 (SongID)。
+- **::hashtag:: 歌曲编号**：三选一填，需要查询的歌曲编号 (SongID)。
   - 如果歌曲编号在 1-15 之间，则会被识别为定数范围。
-- **<HopeIcon icon="star"/> 定数或范围**：三选一填，需要查询的成绩定数或范围（难度）。
+- **::star:: 定数或范围**：三选一填，需要查询的成绩定数或范围（难度）。
   - 可以输入 1-15 之间的数。
     - 如果您输入的是整数（或是整数后面带 `+` 号），则会按模糊定级处理（与机台一致）：
       - 12：12.0-12.5
@@ -102,9 +102,9 @@ copyright: false
     - 如果输入了两个中间由连字符相连的数字，则会按范围处理。
       - 12-12.4：12.0-12.4
       - 13.4-13+：13.4-13.9（带 `+` 号不管怎么样都会被等价为 .6-.9，这里取最大值） 
-- **<HopeIcon icon="filter"/> 查询条件**：请参阅：[<HopeIcon icon="filter"/> 查询条件·舞萌成绩查询器](./filter.md#maimai)
-- **<HopeIcon icon="address-card"/> 玩家名**：同上。
-- **<HopeIcon icon="file"/> 页码**：当前所在的页面编号。
+- **::filter:: 查询条件**：请参阅：[::filter:: 查询条件·舞萌成绩查询器](./filter.md#maimai)
+- **::address-card:: 玩家名**：同上。
+- **::file:: 页码**：当前所在的页面编号。
   - 不输入默认第一页。一页 50 个结果。
 
 ::: tip 提示
@@ -118,7 +118,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="music"/> 4 查询舞萌歌曲 !ymmaimaifind (!mf) {id=maifind}
+## ::music:: 4 查询舞萌歌曲 !ymmaimaifind (!mf) {id=maifind}
 
 这个功能可以按版本和难度筛选谱面。结果会按歌曲编号除以 10000 的余数来降序排布（新歌在上面）。
 
@@ -126,16 +126,16 @@ copyright: false
 
 !ymmaimaifind / mf (`:`**难度**) (**定数或范围**) (**查询条件**) (`#`**页码**)
 
-- **<HopeIcon icon="arrows-to-dot"/> 难度**：谱面难度。
+- **::arrows-to-dot:: 难度**：谱面难度。
   - 可以输入 0-5，或是难度的全称、中文名称、三字母简称、二字母简称、首字母。
     - 如：筛选 EXPERT 谱面，可以输入：2、exp、expert、e、红、专家。
     - 可以按逗号分隔输入多个难度。
-- **<HopeIcon icon="star"/> 定数或范围**：需要查询的谱面定数或范围（难度）。同上。
-- **<HopeIcon icon="filter"/> 查询条件**：请参阅：[<HopeIcon icon="filter"/> 查询条件·舞萌歌曲查询器](./filter.md#maisong)
+- **::star:: 定数或范围**：需要查询的谱面定数或范围（难度）。同上。
+- **::filter:: 查询条件**：请参阅：[::filter:: 查询条件·舞萌歌曲查询器](./filter.md#maisong)
   - 如果输入了多个相同的查询条件，会按它们的并集返回。
   - 如果输入了多个不同的查询条件，会按它们的交集返回。
 
-- **<HopeIcon icon="file"/> 页码**：当前所在的页面编号。
+- **::file:: 页码**：当前所在的页面编号。
   - 不输入默认第一页。一页 48 个结果。
 
 ![查询舞萌歌曲面板，指令：!mf c=沙发太](https://yumemuzi.s-ul.eu/yumu/izjGtzBH)
@@ -155,7 +155,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="id-card-clip"/> 5 查询舞萌姓名框 !ymmaimaiversion (!mv) {id=version}
+## ::id-card-clip:: 5 查询舞萌姓名框 !ymmaimaiversion (!mv) {id=version}
 
 这个功能可以查询到玩家在某个姓名框内的完成度。
 
@@ -163,8 +163,8 @@ copyright: false
 
 !ymmaimaiversion / mv (**玩家名**) (**`#`姓名框**)
 
-- **<HopeIcon icon="address-card"/> 玩家名**：同上。
-- **<HopeIcon icon="id-card-clip"/> 姓名框**：姓名框的名称，即版本号 + 姓名框类别。
+- **::address-card:: 玩家名**：同上。
+- **::id-card-clip:: 姓名框**：姓名框的名称，即版本号 + 姓名框类别。
   - 版本号：可输入英文全称，以及两字母简称、三字母简称、版本代号（不带前面的 `v`）、版本号（内部编号）。
     - 举例：想要查询 `maimai でらっくす Splash PLUS` 版本的姓名框，可以输入：`splashplus`、`splash plus`、`spl+`、`splash+`、`spp`、`1.1`、`1.10`。
     - 请参见下表。
@@ -224,7 +224,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="thumbs-up"/> 6 查询舞萌全连或完美成绩 !ymmaifilter (!xc/!xp) {id=maifilter}
+## ::thumbs-up:: 6 查询舞萌全连或完美成绩 !ymmaifilter (!xc/!xp) {id=maifilter}
 
 这个功能可以查询到玩家全连或是完美的成绩。
 
@@ -232,11 +232,11 @@ copyright: false
 
 !ymmaimaifullcombo (!maifc / !xc) / !ymmaimaiallperfect (!maiap / !xp) / (**玩家名**) (**`#`页码**)
 
-- **<HopeIcon icon="address-card"/> 玩家名**：同上。
-- **<HopeIcon icon="file"/> 页码**：当前所在的页面编号。
+- **::address-card:: 玩家名**：同上。
+- **::file:: 页码**：当前所在的页面编号。
   - 不输入默认第一页。一页 50 个结果。
 
-## <HopeIcon icon="keyboard"/> 7 查询中二最好成绩 !ymmaimaibest (!y) {id=chubest}
+## ::keyboard:: 7 查询中二最好成绩 !ymmaimaibest (!y) {id=chubest}
 
 这个功能可以查询到玩家最好成绩榜（b30+r10）上的成绩。
 
@@ -244,8 +244,8 @@ copyright: false
 
 !ymchunithmbest / chu / cb / y (**玩家名**) (**`#`偏移量或区间**)
 
-- **<HopeIcon icon="address-card"/> 玩家名**：同上。
-- **<HopeIcon icon="ruler-horizontal"/> 偏移量或区间**：需要查询从头到尾排序中的第几个或是某几个成绩。
+- **::address-card:: 玩家名**：同上。
+- **::ruler-horizontal:: 偏移量或区间**：需要查询从头到尾排序中的第几个或是某几个成绩。
   - 可以输入 1~50 之间的整数，输入 2 就是查询第二个最好成绩。
   - 如果不输入任何参数，即可获取玩家的 30 个最好成绩和 10 个最近成绩（等价于其他同类机器人的 b40 功能）。
   - 1~30 为你的前 30 个最好成绩 (b30)，31-40 为你最近 10 次的成绩（有算法计算，可重复获取）(r10)。
@@ -259,15 +259,15 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="magnifying-glass"/> 8 查询水鱼玩家 !ymmaimaiseek (!mk) {id=maiseek}
+## ::magnifying-glass:: 8 查询水鱼玩家 !ymmaimaiseek (!mk) {id=maiseek}
 
 这个功能可以搜索注册了水鱼查分器的玩家，并输出可能的玩家名和玩家评级 (DX Rating)。
 
 **使用方法**
 
 !ymmaimaiseek / mk (**玩家名|玩家评分**)
-- **<HopeIcon icon="address-card"/> 玩家名**：同上。
-- **<HopeIcon icon="address-card"/> 玩家评级**：如果输入的是数字，则会返回评级绝对值最接近的 15 个玩家。
+- **::address-card:: 玩家名**：同上。
+- **::address-card:: 玩家评级**：如果输入的是数字，则会返回评级绝对值最接近的 15 个玩家。
 
 ## 备注
 

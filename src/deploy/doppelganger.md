@@ -92,23 +92,23 @@ expired="限制已解除"
 
 :::
 
-::: tip <HopeIcon icon="person-walking-arrow-right"/> 太长不看 {id=brief}
+::: tip ::person-walking-arrow-right:: 太长不看 {id=brief}
 
 请使用支持 **OneBot V11** 协议的 QQ 客户端，配置**反向 WebSocket** 协议代理链接为下即可。
 
-<HopeIcon icon="tower-cell"/> **ws://121.41.63.60:11735/pub/onebotSocket**
+::tower-cell:: **ws://121.41.63.60:11735/pub/onebotSocket**
 
 <button class="link-like" @click="copyToClipboard2">{{ copyText2 }}</button>
 
 :::
 
-::: tip <HopeIcon icon="people-pulling"/> 详细部署 
+::: tip ::people-pulling:: 详细部署 
 
 - 目前开发者使用的是在 Docker 中，运行基于 [LLOneBot](https://github.com/LLOneBot/LLOneBot) 大礼包的方案。
 
 :::
 
-::: info <HopeIcon icon="person"/> 其他方案
+::: info ::person:: 其他方案
 
 - 基于 Android XP 框架注入的 Shamrock：
   - 已经停止维护。

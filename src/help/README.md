@@ -12,7 +12,7 @@ copyright: false
 
 # 目录
 
-<button class="link-like" @click="showNextMessage">{{buttonText}}</button> <HopeIcon icon="credit-card"/><HopeIcon icon="arrow-pointer"/> 即可进入对应文章。
+<button class="link-like" @click="showNextMessage">{{buttonText}}</button> ::credit-card::::icon arrow-pointer:: 即可进入对应文章。
 
 <script setup>
 import { ref, computed } from 'vue';

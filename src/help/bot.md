@@ -15,7 +15,7 @@ copyright: false
 ---
 # 内部指令
 
-## <HopeIcon icon="list"/> 1 查询指令列表 !ymhelp (!h) {id=help}
+## ::list:: 1 查询指令列表 !ymhelp (!h) {id=help}
 
 通过 QQ 群聊，查询机器人基础指令，以及以下所有模块的指令。
 
@@ -23,7 +23,7 @@ copyright: false
 
 !ymhelp / h (**功能分类**)
 
-- **<HopeIcon icon="table-list"/> 功能分类**：需要查询的功能类别。可输入：
+- **::table-list:: 功能分类**：需要查询的功能类别。可输入：
   - bot / b：内部指令
   - score / s：成绩指令
   - player / p：玩家指令
@@ -33,7 +33,7 @@ copyright: false
   - fun / f：娱乐指令
   - aid / a：辅助指令
 
-## <HopeIcon icon="server"/> 2 查询服务状态 !ymping (!pi) {id=ping}
+## ::server:: 2 查询服务状态 !ymping (!pi) {id=ping}
 
 如果 Bot 在线，则会立即回复一张含 pong! 的图片。
 
@@ -47,14 +47,14 @@ copyright: false
 
 如果您还是想弄懂问题到底出在哪，可以访问:
 
-- <HopeIcon icon="link"/> [==ppy 服务器状态检测网站==](https://status.ppy.sh/)（需要科学上网）。
-- <HopeIcon icon="link"/> [~~YumuBot 服务器状态检测网站（春晚说这个没啥用）~~](https://panel.365246692.xyz/status/public)
+- ::link:: [==ppy 服务器状态检测网站==](https://status.ppy.sh/)（需要科学上网）。
+- ::link:: [~~YumuBot 服务器状态检测网站（春晚说这个没啥用）~~](https://panel.365246692.xyz/status/public)
 
 ![YumuBot 服务器状态检测网站](https://yumemuzi.s-ul.eu/yumu/n6sNerrk)
 
 :::
 
-## <HopeIcon icon="network-wired"/> 3 绑定玩家账号 !ymbind (!bi) {id=bind}
+## ::network-wired:: 3 绑定玩家账号 !ymbind (!bi) {id=bind}
 
 如果用户想要使用 YumuBot 的功能，则必须至少绑定一个 osu! 玩家账号。
 
@@ -66,11 +66,11 @@ copyright: false
 
 ::: details 使用方法
 
-- **<HopeIcon icon="mug-saucer"/> 操作**：只有最高级管理员才可使用。
-- **<HopeIcon icon="address-card"/> 玩家名**：不推荐使用玩家名绑定。这个参数可以供超级管理员来定向解除绑定关系。
-  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
-  - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
-  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@nana7michan。
+- **::mug-saucer:: 操作**：只有最高级管理员才可使用。
+- **::address-card:: 玩家名**：不推荐使用玩家名绑定。这个参数可以供超级管理员来定向解除绑定关系。
+  - 支持使用 ::icon fa-brands fa-qq:: QQ 查询，输入格式为：qq=114514。
+  - 支持使用 ::slash:: UID 查询，输入格式为：uid=1919810。
+  - 支持使用 ::at:: @ 查询，输入格式为：@nana7michan。
 
 :::
 
@@ -103,7 +103,7 @@ op4->e
 
 基础绑定方法是 !ymbind，然后点击链接，在浏览器登录、授权、从而完成绑定（如上图）。
 
-不推荐使用 !ymbind + <HopeIcon icon="address-card"/> 玩家名的绑定方法。因为有**部分功能**在没有 OAuth 2.0 授权前，无法正常使用。
+不推荐使用 !ymbind + ::address-card:: 玩家名的绑定方法。因为有**部分功能**在没有 OAuth 2.0 授权前，无法正常使用。
 
 :::
 
@@ -113,13 +113,13 @@ op4->e
 
 玩家看到提示，并再次发送 OK 确认，Bot 才会发送有效的绑定链接。
 
-在此之前，如果普通玩家想解绑，需要 <HopeIcon icon="link"/> [==联系开发者==](../about/dev.md)，或是去 <HopeIcon icon="link"/> [==个人主页/账户设置下的#开放授权页面==](https://osu.ppy.sh/home/account/edit)，撤销 YuriMumu 的访问权限。
+在此之前，如果普通玩家想解绑，需要 ::link:: [==联系开发者==](../about/dev.md)，或是去 ::link:: [==个人主页/账户设置下的#开放授权页面==](https://osu.ppy.sh/home/account/edit)，撤销 YuriMumu 的访问权限。
 
 ![撤销访问权限](https://yumemuzi.s-ul.eu/yumu/hKyqGQwk)
 
 :::
 
-## <HopeIcon icon="sliders"/> 4 模块开关 !ymswitch (!s*) {id=switch}
+## ::sliders:: 4 模块开关 !ymswitch (!s*) {id=switch}
 
 这个功能可以用于限制部分功能在部分群组内的可用状态，超级管理员也可以用这个功能来限制部分用户（即旧版 super、ban 功能）。
 
@@ -127,17 +127,17 @@ op4->e
 
 !ymswitch / so / sf / sl [**操作**] (**群组号**) (`qq=`**玩家号**) (**功能名**)
 
-- **<HopeIcon icon="up-down-left-right"/> 操作**：**必填**，紧跟在 switch 指令之后。
-  - on，或者短链 SO：<HopeIcon icon="toggle-on"/> 开启
-  - off，或者短链 SF：<HopeIcon icon="toggle-off"/> 关闭
-  - list，或者短链 SL：<HopeIcon icon="list"/> 查看目前所有模块状态（仅超级管理员可用）
-- **<HopeIcon icon="slash"/> 群组号**：二选一填，也可都不填。需要特定限制的群组号。
+- **::up-down-left-right:: 操作**：**必填**，紧跟在 switch 指令之后。
+  - on，或者短链 SO：::toggle-on:: 开启
+  - off，或者短链 SF：::toggle-off:: 关闭
+  - list，或者短链 SL：::list:: 查看目前所有模块状态（仅超级管理员可用）
+- **::slash:: 群组号**：二选一填，也可都不填。需要特定限制的群组号。
   - 输入格式也可以为 group=114514。
-- **<HopeIcon icon="slash"/> 玩家号**：二选一填，也可都不填。需要特定限制的玩家号。
+- **::slash:: 玩家号**：二选一填，也可都不填。需要特定限制的玩家号。
   - 输入格式必须为 qq=114514。
   - 常规用户无法输入别人的玩家号（只能对自己操作）。
   - 如果都不填，则视作全局关闭功能（仅超级管理员可用）
-- **<HopeIcon icon="robot"/> 功能名**：可开关的功能名称，或是功能组（一组功能）。
+- **::robot:: 功能名**：可开关的功能名称，或是功能组（一组功能）。
   - 如果记不住功能名或者功能组，可以留空，或是随便填。Bot 会在找不到正确的名称时提示你。
 
 ::: tip 提示
@@ -190,7 +190,7 @@ op4->e
 
 
 
-## <HopeIcon icon="reply"/> 5 撤回消息 !ymrevoke (!rv) {id=revoke}
+## ::reply:: 5 撤回消息 !ymrevoke (!rv) {id=revoke}
 
 可以撤回机器人已经发送过的消息的功能。
 
@@ -198,7 +198,7 @@ op4->e
 
 !ymrevoke / rv / 撤回
 
-- <HopeIcon icon="reply"/> 必须回复需要撤回的消息。单独发送命令时，机器人无法定位到上下文。
+- ::reply:: 必须回复需要撤回的消息。单独发送命令时，机器人无法定位到上下文。
   - 未来可能会支持无需回复的撤回功能。
 
 ::: warning 注意
@@ -211,7 +211,7 @@ op4->e
 
 :::
 
-## <HopeIcon icon="volume-up"/> 6 回声 !ymecho (!ec) {id=echo}
+## ::volume-up:: 6 回声 !ymecho (!ec) {id=echo}
 
 一个简单的 Bot 回声功能。
 
@@ -219,12 +219,12 @@ op4->e
 
 !ymecho / ec (**群组号**) (`qq=`**玩家号**) (**内容**)
 
-- **<HopeIcon icon="slash"/> 群组号**：二选一填，也可都不填。需要回声传递的群组号。
+- **::slash:: 群组号**：二选一填，也可都不填。需要回声传递的群组号。
   - 输入格式也可以为 group=114514。
-- **<HopeIcon icon="slash"/> 玩家号**：二选一填，也可都不填。需要回声传递的玩家号。
+- **::slash:: 玩家号**：二选一填，也可都不填。需要回声传递的玩家号。
   - 输入格式必须为 qq=114514。
   - 如果都不填，则默认就在当前群发送回声。
-- **<HopeIcon icon="tv"/> 内容**：需要回声传递的内容。
+- **::tv:: 内容**：需要回声传递的内容。
   - 如果要发送图片，回复那张图片即可。
 
 ::: danger 警告
@@ -241,13 +241,13 @@ op4->e
 
 :::
 
-## <HopeIcon icon="desktop"/> 7 查询服务调用数量 !ymservicecount (!sc) {id=servicecount}
+## ::desktop:: 7 查询服务调用数量 !ymservicecount (!sc) {id=servicecount}
 
 **使用方法**
 
 !ymservicecount / sc (**时间**)
 
-- **<HopeIcon icon="clock"/> 时间**：设定查询时间段为多久之前到现在。可以输入一个非负整数。单位是小时。
+- **::clock:: 时间**：设定查询时间段为多久之前到现在。可以输入一个非负整数。单位是小时。
   - 如果输入 0，将会返回数据库内所有条目。
   - 不输入默认 24 小时。
 
@@ -257,16 +257,16 @@ op4->e
 
 :::
 
-## <HopeIcon icon="user-clock"/> 8 查询绑定信息 !ymcheck (!ck) {id=check}
+## ::user-clock:: 8 查询绑定信息 !ymcheck (!ck) {id=check}
 
 **使用方法**
 
 !ymcheck / ck (**玩家名**)
 
-- **<HopeIcon icon="address-card"/> 玩家名**：同上。不输入时默认查询自己。
-  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
-  - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
-  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@nana7michan。
+- **::address-card:: 玩家名**：同上。不输入时默认查询自己。
+  - 支持使用 ::icon fa-brands fa-qq:: QQ 查询，输入格式为：qq=114514。
+  - 支持使用 ::slash:: UID 查询，输入格式为：uid=1919810。
+  - 支持使用 ::at:: @ 查询，输入格式为：@nana7michan。
 
 ::: warning 注意
 

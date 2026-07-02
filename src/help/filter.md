@@ -30,7 +30,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="equals"/> 运算符
+## ::equals:: 运算符
 
 大多数查询条件均支持以下运算符：
 
@@ -65,7 +65,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="user"/> 玩家查询器 {id=player}
+## ::user:: 玩家查询器 {id=player}
 
 | 条件名 | 条件英文名 | 简称 | 查询字段类型 |
 | --- | --- | :-: | --- |
@@ -96,7 +96,7 @@ copyright: false
 | 游玩时间 | playtime | pt | 时间（无单位默认为天） |
 | 总击打数 | totalhit | tth、th | 整数 |
 
-## <HopeIcon icon="gamepad"/> 成绩查询器 {id=score}
+## ::gamepad:: 成绩查询器 {id=score}
 
 | 条件名 | 条件英文名 | 简称 | 查询字段类型 |
 | --- | --- | :-: | --- |
@@ -143,7 +143,7 @@ copyright: false
 | 客户端 | client、version | v | lazer 或 stable、l、s |
 | 创建时间 | created | ct、ca | 时间（无单位默认为天） |
 
-## <HopeIcon icon="map-location"/> 最多游玩谱面查询器 {id=most_played}
+## ::map-location:: 最多游玩谱面查询器 {id=most_played}
 
 | 条件名 | 条件英文名 | 简称 | 查询字段类型 |
 | --- | --- | :-: | --- |
@@ -164,7 +164,7 @@ copyright: false
 | 谱面状态 | category、status | v、z | 谱面状态 |
 | 游玩次数 | count | n | 整数 |
 
-## <HopeIcon icon="magnifying-glass"/> 搜索查询器 {id=search}
+## ::magnifying-glass:: 搜索查询器 {id=search}
 
 | 条件名 | 条件英文名 | 简称 | 查询字段类型 |
 | --- | --- | :-: | --- |
@@ -206,7 +206,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="layer-group"/> 谱面集查询器 {id=beatmapset}
+## ::layer-group:: 谱面集查询器 {id=beatmapset}
 
 | 条件名 | 条件英文名 | 简称 | 查询字段类型 |
 | --- | --- | :-: | --- |
@@ -238,7 +238,7 @@ copyright: false
 | 游玩次数 | playcount | pc | 千数 |
 | 收藏次数 | favorite | fv | 整数 |
 
-## <HopeIcon icon="spinner"/> 舞萌成绩查询器 {id=maimai}
+## ::spinner:: 舞萌成绩查询器 {id=maimai}
 
 | 条件名 | 条件英文名 | 简称 | 查询字段类型 |
 | --- | --- | :-: | --- |
@@ -266,7 +266,7 @@ copyright: false
 | 连击 | combo、cb | x | fc、fc+、ap、ap+，其他均为 played |
 | 同步 | sync、sy | y | s (sync)、fs、fs+、fsd (fdx)、fsd+ (fdx+)，其他均为 played |
 
-## <HopeIcon icon="music"/> 舞萌歌曲查询器 {id=maisong}
+## ::music:: 舞萌歌曲查询器 {id=maisong}
 
 | 条件名 | 条件英文名 | 简称 | 查询字段类型 |
 | --- | --- | :-: | --- |

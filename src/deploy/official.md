@@ -87,13 +87,13 @@ async function copyToClipboard() {
 }
 </style>
 
-![二维码](./img/QRCode.png)
+![二维码 =x200](./img/QRCode.png)
 
 - 扫描成功后，您可以看见类似以下这样的界面。
 - 如果您是某群聊的群主或管理员，点击==添加到群聊==，并选择您管理或拥有的群聊即可完成添加。
 - 如果您是普通用户，点击==发消息==即可开始私密使用。
 
-![邀请界面](./img/invite.jpg)
+![邀请界面 =x400](./img/invite.jpg)
 
 ::: tip 使用官方机器人的优点
 
