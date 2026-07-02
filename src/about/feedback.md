@@ -6,13 +6,13 @@ copyright: false
 order: 3
 ---
 
-```card
-title: 开发团队
-desc: 想要联系团队，请点这里
-logo: ./assets/icon/icon-terminal.svg
-link: dev.md
-color: rgba(242, 108, 79, 0.15)
-```
+<VPCard
+    title="开发团队"
+    desc="想要联系团队，请点这里"
+    logo="./assets/icon/icon-terminal.svg"
+    link="dev.md"
+    background="rgba(242, 108, 79, 0.15)"
+/>
 
 如果您：
 

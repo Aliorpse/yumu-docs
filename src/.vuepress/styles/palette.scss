@@ -1,34 +1,55 @@
 // you can change colors here
-$theme-color: #00B7EE;
-$theme-color-light: #00B7EE;
-$theme-color-dark: #009FCC;
+$theme-color: oklch(0.65 0.17 230);
+$theme-color-light: oklch(0.74 0.17 230);
+$theme-color-dark: oklch(0.55 0.17 230);
 $text-color: (
-	light: #1E3E47, //H193 S40 L10
-	dark: #EDF5F7, //H193 S40 L95
+        light: oklch(0.25 0.04 230),
+        dark: oklch(0.9 0.01 230),
 );
 
-$vp-c-text: #EDF5F7;
-$vp-c-text-mute: #B7D7E0;
-$vp-c-text-subtle: #B7D7E0;
+$vp-c-text: $text-color;
 
-$vp-c-accent: #D32F2F;
-$vp-c-accent-hover: #32D2FF; //H193 S100 L60
-$vp-c-accent-bg: #8A1538;
-$vp-c-accent-text: #FAFAFA;
-$vp-c-accent-soft: #D32F2F55;
-$vp-c-control-hover: #00B7EE;
+$vp-c-text-mute: (
+        light: oklch(0.35 0.03 230),
+        dark: oklch(0.8 0.02 230),
+);
 
-// add custom font
+// 辅助文本（如脚注、页脚版权等）
+$vp-c-text-subtle: (
+        light: oklch(0.55 0.02 230),
+        dark: oklch(0.65 0.02 230),
+);
+
+$vp-c-accent: $theme-color;
+$vp-c-accent-hover: oklch(0.84 0.15 230);
+$vp-c-accent-bg: oklch(0.84 0.15 230);
+$vp-c-accent-text: oklch(1 0 230);
+$vp-c-accent-soft: oklch(0.97 0.02 230);
+$vp-c-control-hover: $vp-c-accent-hover;
+
+$content-width: 75vw;
+$wide-content-width: 1000px;
+$home-page-width: 80vw;
+
 @font-face {
-	font-family: "Torus";
-	src: url("/assets/font/Torus-SemiBold.ttf");
+  font-family: "Torus";
+  font-weight: 600;
+  src: url("/assets/font/Torus-SemiBold.woff2") format("woff2"),
+  url("/assets/font/Torus-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Torus";
+  font-weight: 700;
+  src: url("/assets/font/Torus-Bold.woff2") format("woff2"),
+  url("/assets/font/Torus-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "AlibabaPuHuiTi";
+  font-weight: 600;
+  src: url("/assets/font/AlibabaPuHuiTi-2-75-SemiBold.woff2") format("woff2");
 }
 
-@font-face {
-	font-family: "AlibabaPuHuiTi-3-55-Regular";
-	src: url("/assets/font/AlibabaPuHuiTi-3-55-Regular.ttf");
-}
-
-$font-family: 'Torus,AlibabaPuHuiTi-3-55-Regular';
-$font-family-heading: 'Torus,AlibabaPuHuiTi-3-55-Regular';
-$font-family-mono: 'Torus,AlibabaPuHuiTi-3-55-Regular';
+// 2. 注入字体族变量（带逗号的字符串在这里安全通行！）
+$vp-font: '"Torus", "AlibabaPuHuiTi", sans-serif';
+$vp-font-heading: '"Torus", "AlibabaPuHuiTi", sans-serif';
+$vp-font-mono: '"Torus", "AlibabaPuHuiTi", monospace';

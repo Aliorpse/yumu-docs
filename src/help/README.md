@@ -62,136 +62,136 @@ function showNextMessage() {
 }
 </style>
 
-```card
-title: 指令列表
-desc: 所有指令按首字母排列
-logo: ./assets/icon/icon-play.svg
-link: command.md
-color: rgba(200, 200, 200, 0.15)
-```
+<VPCard
+  title="指令列表"
+  desc="所有指令按首字母排列"
+  logo="./assets/icon/icon-play.svg"
+  link="command.md"
+  background="rgba(200, 200, 200, 0.15)"
+/>
 
 **最近更新**
 
-```card
-title: 查询群谱面排行榜
-desc: group leaderboard
-logo: ./assets/icon/icon-plus.svg
-link: ./map.md#groupleaderboard
-color: rgba(200, 200, 200, 0.15)
-```
+<VPCard
+  title="查询群谱面排行榜"
+  desc="group leaderboard"
+  logo="./assets/icon/icon-plus.svg"
+  link="./map.md#groupleaderboard"
+  background="rgba(200, 200, 200, 0.15)"
+/>
 
-```card
-title: 猜歌游戏
-desc: guess
-logo: ./assets/icon/icon-plus.svg
-link: ./fun.md#guess
-color: rgba(200, 200, 200, 0.15)
-```
+<VPCard
+  title="猜歌游戏"
+  desc="guess"
+  logo="./assets/icon/icon-plus.svg"
+  link="./fun.md#guess"
+  background="rgba(200, 200, 200, 0.15)"
+/>
 
-```card
-title: 查询玩家技巧 v6.1
-desc: skill
-logo: ./assets/icon/icon-plus.svg
-link: ./player.md#skill
-color: rgba(200, 200, 200, 0.15)
-```
+<VPCard
+  title="查询玩家技巧 v6.1"
+  desc="skill"
+  logo="./assets/icon/icon-plus.svg"
+  link="./player.md#skill"
+  background="rgba(200, 200, 200, 0.15)"
+/>
 
 **指令分类**
 
-```card
-title: 内部指令
-desc: Ping、绑定、封禁玩家、控制功能
-logo: ./assets/icon/icon-terminal.svg
-link: bot.md
-color: rgba(242, 108, 79, 0.15)
-```
+<VPCard
+  title="内部指令"
+  desc="Ping、绑定、封禁玩家、控制功能"
+  logo="./assets/icon/icon-terminal.svg"
+  link="bot.md"
+  background="rgba(242, 108, 79, 0.15)"
+/>
 
-```card
-title: 成绩指令
-desc: 最近最好成绩、修改模式
-logo: ./assets/icon/icon-gamepad.svg
-link: score.md
-color: rgba(246, 142, 85, 0.15)
-```
+<VPCard
+  title="成绩指令"
+  desc="最近最好成绩、修改模式"
+  logo="./assets/icon/icon-gamepad.svg"
+  link="score.md"
+  background="rgba(246, 142, 85, 0.15)"
+/>
 
-```card
-title: 玩家指令
-desc: 个人信息、好友，PPM
-logo: ./assets/icon/icon-user.svg
-link: player.md
-color: rgba(251, 175, 92, 0.15)
-```
+<VPCard
+  title="玩家指令"
+  desc="个人信息、好友，PPM"
+  logo="./assets/icon/icon-user.svg"
+  link="player.md"
+  background="rgba(251, 175, 92, 0.15)"
+/>
 
-```card
-title: 谱面指令
-desc: 搜索、试听、查询参数和表现分
-logo: ./assets/icon/icon-map.svg
-link: map.md
-color: rgba(255, 244, 103, 0.15)
-```
+<VPCard
+  title="谱面指令"
+  desc="搜索、试听、查询参数和表现分"
+  logo="./assets/icon/icon-map.svg"
+  link="map.md"
+  background="rgba(255, 244, 103, 0.15)"
+/>
 
-```card
-title: 比赛指令
-desc: 监控，计算斗力，查询图池
-logo: ./assets/icon/icon-handshake-simple.svg
-link: tournament.md
-color: rgba(172, 211, 114, 0.15)
-```
+<VPCard
+  title="比赛指令"
+  desc="监控，计算斗力，查询图池"
+  logo="./assets/icon/icon-handshake-simple.svg"
+  link="tournament.md"
+  background="rgba(172, 211, 114, 0.15)"
+/>
 
-```card
-title: 聊天指令
-desc: 接收、回复官网消息、被动回话
-logo: ./assets/icon/icon-comments.svg
-link: chat.md
-color: rgba(124, 197, 118, 0.15)
-```
+<VPCard
+  title="聊天指令"
+  desc="接收、回复官网消息、被动回话"
+  logo="./assets/icon/icon-comments.svg"
+  link="chat.md"
+  background="rgba(124, 197, 118, 0.15)"
+/>
 
-```card
-title: 娱乐指令
-desc: 扔骰子、猜歌
-logo: ./assets/icon/icon-paw.svg
-link: fun.md
-color: rgba(59, 184, 120, 0.15)
-```
+<VPCard
+  title="娱乐指令"
+  desc="扔骰子、猜歌"
+  logo="./assets/icon/icon-paw.svg"
+  link="fun.md"
+  background="rgba(59, 184, 120, 0.15)"
+/>
 
-```card
-title: 辅助指令
-desc: 天气、百科、睡眠、其他
-logo: ./assets/icon/icon-wheelchair.svg
-link: aid.md
-color: rgba(26, 187, 180, 0.15)
-```
+<VPCard
+  title="辅助指令"
+  desc="天气、百科、睡眠、其他"
+  logo="./assets/icon/icon-wheelchair.svg"
+  link="aid.md"
+  background="rgba(26, 187, 180, 0.15)"
+/>
 
-```card
-title: 舞萌 & 中二指令
-desc: 查询成绩、歌曲、姓名框
-logo: ./assets/icon/icon-spinner.svg
-link: maimai.md
-color: rgba(67, 140, 202, 0.15)
-```
+<VPCard
+  title="舞萌 & 中二指令"
+  desc="查询成绩、歌曲、姓名框"
+  logo="./assets/icon/icon-spinner.svg"
+  link="maimai.md"
+  background="rgba(67, 140, 202, 0.15)"
+/>
 
-```card
-title: 自定指令
-desc: 自定义横幅背景、卡片背景
-logo: ./assets/icon/icon-pen-nib.svg
-link: custom.md
-color: rgba(89, 80, 158, 0.15)
-```
+<VPCard
+  title="自定指令"
+  desc="自定义横幅背景、卡片背景"
+  logo="./assets/icon/icon-pen-nib.svg"
+  link="custom.md"
+  background="rgba(89, 80, 158, 0.15)"
+/>
 
-```card
-title: 私服指令
-desc: 支持偏偏要上班
-logo: ./assets/icon/icon-ungroup.svg
-link: privateserver.md
-color: rgba(158, 135, 142, 0.15)
-```
+<VPCard
+  title="私服指令"
+  desc="支持偏偏要上班"
+  logo="./assets/icon/icon-ungroup.svg"
+  link="privateserver.md"
+  background="rgba(158, 135, 142, 0.15)"
+/>
 
 **其他**
 
-```card
-title: 筛选条件
-desc: 部分筛选器的语法
-logo: ./assets/icon/icon-play.svg
-link: filter.md
-color: rgba(200, 200, 200, 0.15)
-```
+<VPCard
+  title="筛选条件"
+  desc="部分筛选器的语法"
+  logo="./assets/icon/icon-play.svg"
+  link="filter.md"
+  background="rgba(200, 200, 200, 0.15)"
+/>

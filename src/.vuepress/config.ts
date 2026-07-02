@@ -1,40 +1,21 @@
-import { defineUserConfig } from "vuepress";
-import { searchProPlugin } from "vuepress-plugin-search-pro";
+import {defineUserConfig} from "vuepress";
+import {viteBundler} from "@vuepress/bundler-vite";
 import theme from "./theme";
 
 export default defineUserConfig({
-  base: "/",
+    base: "/",
 
-  lang: "zh-CN",
-  title: "Yumu Docs",
-  description: "Yumu Docs",
+    bundler: viteBundler(),
 
-  theme,
+    lang: "zh-CN", title: "Yumu Docs", description: "Yumu Docs",
 
-  // Enable it with pwa
-  // shouldPrefetch: false,
-  head: [
-    [
-      "link",
-      {
-        href: "/assets/font/AlibabaPuHuiTi-3-55-Regular.ttf",
-        rel: "stylesheet",
-      },
-    ],
-    [
-      "link",
-      {
-        href: "/assets/font/Torus-SemiBold.ttf",
-        rel: "stylesheet",
-      },
-    ],
-    
-  ],
-  plugins:[
-    searchProPlugin({
-      // 索引全部内容
-      indexContent: true,
-    }),
+    theme,
 
-  ]
+    // Enable it with pwa
+    // shouldPrefetch: false,
+    head: [["link", {
+        href: "/assets/font/AlibabaPuHuiTi-3-55-Regular.ttf", rel: "stylesheet",
+    },], ["link", {
+        href: "/assets/font/Torus-SemiBold.ttf", rel: "stylesheet",
+    },],],
 });
