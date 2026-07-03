@@ -104,28 +104,48 @@ expired="限制已解除"
 
 ::: tip ::people-pulling:: 详细部署 
 
-- 目前开发者使用的是在 Docker 中，运行基于 [LLOneBot](https://github.com/LLOneBot/LLOneBot) 大礼包的方案。
+目前开发者使用的是在 Docker 中，运行基于 HOOK QQNT 的方案[幸运莉莉娅 (a.k.a LLOneBot)](https://github.com/LLOneBot/LLOneBot) 默认配置（使用其自带的框架，不搭配其他框架）的方案。
+
+[详细文档](https://luckylillia.com/guide/introduction)
 
 :::
 
 ::: info ::person:: 其他方案
 
-- 基于 Android XP 框架注入的 Shamrock：
-  - 已经停止维护。
-  - 用了框架，我的古董机已经变成暖手宝了。
 - 基于 [Mirai](https://mirai.mamoe.net/) 的 [go-cqhttp](https://docs.go-cqhttp.org/)：
   - **不推荐**，作者已被腾讯传唤，并停止维护。
-  - 如果您之前就使用了此解决方案，并且账号依旧可以登录 (未出现 Code 45)，可以直接在配置文件内的 `ws-reverse` 行，填入以上所述的[反向 WebSocket 代理链接](#brief)，完成部署。
-- 基于 HOOK QQNT 的方案 [LiteLoaderQQNT](https://liteloaderqqnt.github.io/) 搭配 [NapCat](https://napneko.github.io/) 框架：
-  - NapCat 特征几乎已经被锁定，建议不要试了。
-- 基于 C# 实现的 QQNT 消息协议库 [Lagrange.Core](https://lagrangedev.github.io/Lagrange.Doc/)：
-  - 拉格兰的仓库已经留档，但是基于它的其他仓库可以试试。
+- 基于 HOOK QQNT 的方案 [LiteLoaderQQNT](https://liteloaderqqnt.github.io/)...
+  - 搭配 [NapCat](https://napneko.github.io/) 框架：napcat 特征几乎已经被锁定。
+  - 账号体质不佳的就别试了。
+- 基于 Android XP 框架注入的 Shamrock：
+  - 已经停止维护。
+  - 需要你有一个安卓设备来挂框架和 QQ。我的古董机已经变成暖手宝了。
+  - 如果你只有安卓设备，可以尝试。记得保活，并关闭各种省电策略。
+- 主要基于协议（需搭配签名服务器）：
+  - [icqq.js](https://github.com/icqqjs) + [onebots](github.com/lc-cn/onebots)
+    - 安卓协议实现，邀请制。
+  - [LagrangeV2](https://github.com/LagrangeDev/LagrangeV2/) 
+    - Linux 协议实现，[Lagrange.Core](https://github.com/LagrangeDev/Lagrange.Core) 的新版本，目前没有适配 Onebot11 通信协议，需动手适配。
+  - [Yogurt](https://acidify.ntqqrev.org/yogurt/start) 
+    - Linux 协议实现，目前没有适配 Onebot11 通信协议，需动手适配。
 
 :::
 
 ::: info 备注
 
 Bot 有多账号在同一个环境中时的消息去重机制。因此您可以放心大胆地部署。不会发生“发送一条指令返回多个结果“的情况。
+
+:::
+
+::: tip 提示
+
+如果您使用的框架支持简单的消息过滤（如 LLBot，go-cqhttp），请启用这个功能，并仅允许以 `!` 开头和其他 Yumu 指令相关的消息上报，这不仅可以保护您的隐私，也可以大幅节省服务器的带宽。
+
+可能涉及到的指令前缀：`/`、`\`、`!`、`！`、`?`、`？`、数字 `0`-`9`。
+
+- 主要的指令前缀是两个感叹号 `!`。
+- 私服指令（偏偏要上班）是两个问号 `?`。
+- 数字前缀用于[娱乐/扔骰子](../help/fun.md)的多次投掷。
 
 :::
 
