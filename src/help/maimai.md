@@ -102,7 +102,7 @@ copyright: false
     - 如果输入了两个中间由连字符相连的数字，则会按范围处理。
       - 12-12.4：12.0-12.4
       - 13.4-13+：13.4-13.9（带 `+` 号不管怎么样都会被等价为 .6-.9，这里取最大值） 
-- **::filter:: 查询条件**：请参阅：[::filter:: 查询条件·舞萌成绩查询器](./filter.md#maimai)
+- **::filter:: 查询条件**：请参阅：[::filter:: 查询条件·舞萌成绩查询器](../tips/field/filter.md#maimai)
 - **::address-card:: 玩家名**：同上。
 - **::file:: 页码**：当前所在的页面编号。
   - 不输入默认第一页。一页 50 个结果。
@@ -131,7 +131,7 @@ copyright: false
     - 如：筛选 EXPERT 谱面，可以输入：2、exp、expert、e、红、专家。
     - 可以按逗号分隔输入多个难度。
 - **::star:: 定数或范围**：需要查询的谱面定数或范围（难度）。同上。
-- **::filter:: 查询条件**：请参阅：[::filter:: 查询条件·舞萌歌曲查询器](./filter.md#maisong)
+- **::filter:: 查询条件**：请参阅：[::filter:: 查询条件·舞萌歌曲查询器](../tips/field/filter.md#maisong)
   - 如果输入了多个相同的查询条件，会按它们的并集返回。
   - 如果输入了多个不同的查询条件，会按它们的交集返回。
 
@@ -190,23 +190,23 @@ copyright: false
 | maimai MURASAKi | 紫 | k, ms, msk | 0.5 | 18000 |
 | maimai MURASAKi PLUS | 堇 | k+, ms+, msk+ | 0.55 | 18500 |
 | maimai MiLK | 白 | l, mk, mlk | 0.6 | 19000 |
-| MiLK PLUS | 雪 | l+, mk+, mlk+ | 0.65 | 19500 |
+| maimai MiLK PLUS | 雪 | l+, mk+, mlk+ | 0.65 | 19500 |
 | maimai FiNALE | 輝 | n, fn, fnl | 0.7 | 19900 |
 | ALL FiNALE[^2] | 舞 | n+, afn, fn+ | 0.75 | - |
 | maimai でらっくす | 熊 | d, dx, dlx, 2020 | 1.0 | 20000 |
-| maimai でらっくす PLUS[^3] | 華 | d+, dx+, dlx+ | 1.05 | 20000 |
+| maimai でらっくす PLUS[^3] | 華 | d+, dx+, dlx+ | 1.05 | 20500 |
 | maimai でらっくす Splash | 爽 | s, sp, spl, 2021 | 1.1 | 21000 |
-| maimai でらっくす Splash PLUS[^3] | 煌 | s+, sp+, spl+ | 1.15 | 21000 |
+| maimai でらっくす Splash PLUS[^3] | 煌 | s+, sp+, spl+ | 1.15 | 21500 |
 | maimai でらっくす UNiVERSE | 星 | u, un, uv, unv, 2022 | 1.2 | 22000 |
-| maimai でらっくす UNiVERSE PLUS[^3] | 宙 | u+, un+, uv+, unv+ | 1.25 | 22000 |
+| maimai でらっくす UNiVERSE PLUS[^3] | 宙 | u+, un+, uv+, unv+ | 1.25 | 22500 |
 | maimai でらっくす FESTiVAL | 祭 | f, fs, fes, 2023 | 1.3 | 23000 |
-| maimai でらっくす FESTiVAL PLUS[^3] | 祝 | f+, fs+, fes+ | 1.35 | 23000 |
+| maimai でらっくす FESTiVAL PLUS[^3] | 祝 | f+, fs+, fes+ | 1.35 | 23500 |
 | maimai でらっくす BUDDiES | 双 | b, bd, bud, 2024 | 1.4 | 24000 |
-| maimai でらっくす BUDDiES PLUS[^3] | 宴 | b+, bd+, bud+ | 1.45 | 24000 |
+| maimai でらっくす BUDDiES PLUS[^3] | 宴 | b+, bd+, bud+ | 1.45 | 24500 |
 | maimai でらっくす PRiSM | 鏡 | r, pr, pri, prs, 2025 | 1.5 | 25000 |
-| maimai でらっくす PRiSM PLUS[^3][^4] | 彩 | r+, pr+, pri+, prs+ | 1.55 | 25000 |
-| maimai でらっくす CiRCLE[^4] |  | c, ci, cr, cc, cir, cle, 2026 | 1.6 | 26000[^5] |
-| maimai でらっくす CiRCLE PLUS[^3][^4][^5] |  | c+, ci+, cr+, cc+, cir+, cle+ | 1.65 | 26000[^5] |
+| maimai でらっくす PRiSM PLUS | 彩 | r+, pr+, pri+, prs+, 2026 | 1.55 | 25500 |
+| maimai でらっくす CiRCLE[^4] | 丸 | c, ci, cr, cc, cir | 1.6 | 26000[^5] |
+| maimai でらっくす CiRCLE PLUS[^4][^5] | - | c+, ci+, cr+, cc+, cir+, 2027 | 1.65 | 26500[^5] |
 
 :::
 

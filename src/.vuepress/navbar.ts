@@ -2,31 +2,33 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   "/",
-  "/help/",
+
   {
-    text: "小提示",
-    icon: "lightbulb",
-    prefix: "/tips/",
-    children: [
-      {
-        text: "Bot 功能",
-        icon: "icons",
-        link: "botFunction/",
-      },
-      {
-        text: "osu! 冷知识",
-        icon: "ear-listen",
-        link: "osuTrivia/",
-      },
-    ],
+    text: "帮助",
+    icon: "book",
+    link: "help/",
   },
+
   {
-    text: "Bot 主站",
-    icon: "network-wired",
-    link: "https://bot.365246692.xyz/",
+    text: "字段",
+    icon: "key",
+    link: "tips/field/",
   },
+
   {
-    text: "osu! 主站",
+    text: "技巧",
+    icon: "wand-magic-sparkles",
+    link: "tips/trick/",
+  },
+
+  {
+    text: "维基",
+    icon: "graduation-cap",
+    link: "wiki/",
+  },
+
+  {
+    text: "osu!",
     icon: "globe",
     link: "https://osu.ppy.sh/home",
   },

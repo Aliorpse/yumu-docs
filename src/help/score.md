@@ -93,7 +93,7 @@ copyright: false
   - 支持使用 ::icon fa-brands fa-qq:: QQ 查询，输入格式为：qq=114514。
   - 支持使用 ::slash:: UID 查询，输入格式为：uid=1919810。
   - 支持使用 ::at:: @ 查询，输入格式为：@nana7michan。
-- **::filter:: 查询条件**：请参阅：[::filter:: 查询条件·成绩查询器](./filter.md#score)
+- **::filter:: 查询条件**：请参阅：[::filter:: 查询条件·成绩查询器](../tips/field/filter.md#score)
 - **::ruler-horizontal:: 偏移量或区间**：需要查询从新到老排序中的第几个或是某几个成绩。
   - 可以输入 1~100 之间的整数，输入 2，就是查询最近的通过成绩的前一个通过成绩。
   - 可以输入区间，格式为：最小数`-`最大数，如 1-20。
@@ -113,8 +113,8 @@ copyright: false
 
 示例：
 
-* !p osuplayer 12，查询玩家 osuplayer 往前数第十二个通过成绩。
-* !p osuplayer 12 #12，查询玩家 osuplayer 12 往前数第十二个通过成绩。
+* !p osuplayer 12，查询玩家 `osuplayer` 往前数第十二个通过成绩。
+* !p osuplayer 12 #12，查询玩家 `osuplayer 12` 往前数第十二个通过成绩。
 
 大多数可以忽略 `#` 号的参数都有这种性质。请用户注意，尽量避免获取到不想要的结果。
 
@@ -146,7 +146,7 @@ copyright: false
   - 支持使用 ::icon fa-brands fa-qq:: QQ 查询，输入格式为：qq=114514。
   - 支持使用 ::slash:: UID 查询，输入格式为：uid=1919810。
   - 支持使用 ::at:: @ 查询，输入格式为：@nana7michan。
-- **::filter:: 查询条件**：请参阅：[::filter:: 查询条件·成绩查询器](./filter.md#score)
+- **::filter:: 查询条件**：请参阅：[::filter:: 查询条件·成绩查询器](../tips/field/filter.md#score)
 - **::ruler-horizontal:: 偏移量或区间**：需要查询从新到老排序中的第几个或是某几个成绩。
   - 可以输入 1~100 之间的整数，输入 2，就是查询最近成绩的前一个成绩。
   - 可以输入区间，格式为：最小数`-`最大数，如 1-20。
@@ -256,7 +256,7 @@ cond4(no)->op7->e
   - 支持使用 ::icon fa-brands fa-qq:: QQ 查询，输入格式为：qq=114514。
   - 支持使用 ::slash:: UID 查询，输入格式为：uid=1919810。
   - 支持使用 ::at:: @ 查询，输入格式为：@nana7michan。
-- **::filter:: 查询条件**：请参阅：[::filter:: 查询条件·成绩查询器](./filter.md#score)
+- **::filter:: 查询条件**：请参阅：[::filter:: 查询条件·成绩查询器](../tips/field/filter.md#score)
 - **::ruler-horizontal:: 偏移量或区间**：需要查询从头到尾排序中的第几个或是某几个成绩。
   - 可以输入 1~200 之间的整数，输入 102 就是查询第 102 个最好成绩。
   - 可以输入区间，格式为：最小数`-`最大数，如 1-20。

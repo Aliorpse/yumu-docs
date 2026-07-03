@@ -95,9 +95,9 @@ copyright: false
   - 仅支持使用 ::at:: @ 查询，输入格式为：@nana7michan。
   - 其他任何字段都会被匹配成查询条件。
 - **::filter:: 查询条件**：
-  - 对于 search 模式，请参阅：[::filter:: 查询条件·搜索查询器](./filter.md#search)
-  - 对于 most_played 模式，请参阅：[::filter:: 查询条件·最多游玩谱面查询器](./filter.md#most_played)
-  - 对于其他模式，请参阅：[::filter:: 查询条件·谱面集查询器](./filter.md#beatmapset)
+  - 对于 search 模式，请参阅：[::filter:: 查询条件·搜索查询器](../tips/field/filter.md#search)
+  - 对于 most_played 模式，请参阅：[::filter:: 查询条件·最多游玩谱面查询器](../tips/field/filter.md#most_played)
+  - 对于其他模式，请参阅：[::filter:: 查询条件·谱面集查询器](../tips/field/filter.md#beatmapset)
   - 如果输入的内容不符合任何查询条件，则会直接使用这些内容查询。
 
 ::: tip 提示
@@ -282,7 +282,7 @@ Map Minus 已更新至 v6.1 版本。这个版本重构了算法，相比于 v4 
   - 仅限 osu!standard 切换转谱排行榜时使用。
 - **::hashtag:: 谱面编号**：选填。需要查询的谱面编号 (BID)。
   - 如果不输入编号，则默认获取 24 小时内查询过的谱面，从而获取这张谱面上的排行榜。
-- **::filter:: 查询条件**：请参阅：[::filter:: 查询条件·成绩查询器](./filter.md#score)
+- **::filter:: 查询条件**：请参阅：[::filter:: 查询条件·成绩查询器](../tips/field/filter.md#score)
 - **::file:: 页码**：当前所在的页面编号。
   - 不输入默认第一页。一页 50 个结果。
 - **::music:: 模组名称**：模组的简称，通常为两位大写字母组成。可以无空格地输入多个 ::music:: 模组。

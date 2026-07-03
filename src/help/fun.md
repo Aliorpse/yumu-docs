@@ -21,7 +21,7 @@ copyright: false
 
 ## ::dice:: 1 扔骰子 !ymdice (!d) {id=dice}
 
-::: danger 免责声明
+::: caution 免责声明
 
 在扔骰子功能中，本 Bot 的一切回复均为系统==真随机生成==。
 
@@ -31,7 +31,7 @@ copyright: false
 
 :::
 
-::: danger 警告
+::: caution 警告
 
 请在让 Bot 做决定时，输入健康、积极、文明、符合社会主义核心价值观的言论！
 

@@ -19,7 +19,7 @@ copyright: false
 
 | 简称 | 语法 | 功能英文名 | 功能中文名 | 备注 |
 | :-: | :-- | :-- | :-- | :-- |
-| A | !a(`s`) (bid) | [Audio](./map.html#audio) | 试听谱面 | *即 Song。*<br />!as 按谱面集 ID (**SID**) 查询。 |
+| A | !a(`s`) (bid) | [Audio](./map.html#audio) | 试听谱面 | *即 Song。*<br />!as 按谱面集编号 (**SID**) 查询。 |
 | B | !b(`s`) (`:`mode) (user) (filter) (`#`num) | [Best Performance](./score.html#bestperformance) | 查询最好成绩 | *!bs 使用多成绩模式。*<br />**mode**：游戏模式<br />**user**：玩家名，`qq=`qq号，`uid=`玩家 ID<br />**filter**：筛选条件<br />**num**：也可输入 `-` 分隔的区间 |
 | C | !c (`:`operate) (type) | [Custom](./custom.md) | 自定义 | *可自定义横幅或卡片。*<br />**operate**：操作，比如添加和删除 add/delete<br />**type**：种类，现支持 banner/card |
 | D | !d (num) (decision) | [Dice](./fun.html#dice) | 扔骰子 | *即 Roll。*<br />**decision**：想做的决定，比如去不去玩 |
@@ -32,7 +32,7 @@ copyright: false
 | K | !k (user) | [Skill](./map.html#skill) | 分析玩家技巧 | *测试中* |
 | L | !l (`:`mode) **[bid]** | [Leader](./map.html#leaderboard) | 查询谱面排行榜 | - |
 | M | !m (`:`mode) **[bid]** (acc`%`) (`x`combo) (`-`miss) (`+`mod) | [Map](./map.html#map) | 查询谱面信息 | **acc**：准确率<br />**combo**：连击数，或连击占比 (0-1)<br />**miss**：失误数<br />**mod**：模组名称 |
-| N | !n(`b`) **[sid]** | [Nomination](./map.html#nomination) | 查询上架流程 | *!nb 按谱面 ID (**BID**) 查询。* |
+| N | !n(`b`) **[sid]** | [Nomination](./map.html#nomination) | 查询上架流程 | *!nb 按谱面编号 (**BID**) 查询。* |
 | O | !o (users) | [Old Avatar](./aid.html#oldavater) | 获取旧版头像 | - |
 | P | !p(`s`) (`:`mode) (user) (filter) (`#`num) | [Pass](./score.html#pass) | 查询通过成绩 | **num**：也可输入 `-` 分隔的区间 |
 | Q | !q (`:`mode) (`#`status) (`*`sort) (num) | [Qualified](./map.html#qualified) | 查询过审谱面 | **status**：谱面状态。gwpraql，默认 q<br />**sort**：排序方式，ta(ds)mp(rt) + (asc/desc) |
@@ -57,7 +57,7 @@ copyright: false
 | GI | !gi (users) | [Get ID](./player.html#getid) | 获取玩家 ID | *仅管理员或群主使用。* |
 | GL | !gl (bid) (filter) (`#`page) | [Group Leaderboard](./map.html#groupleaderboard) | 查询群谱面排行榜 | - |
 | GN | !gn (ids) | [Get Name](./player.html#getname) | 获取玩家名称 | *仅管理员或群主使用。* |
-| GP | !gp (`:`mode) (`#`name`#`) [[mod] [bids]] | [Get Pool](./tournament.html#getpool) | 生成图池图片 | **mod bids**：请**按组输入**模组和谱面 ID，比如：NM 123 456 789。 |
+| GP | !gp (`:`mode) (`#`name`#`) [[mod] [bids]] | [Get Pool](./tournament.html#getpool) | 生成图池图片 | **mod bids**：请**按组输入**模组和谱面编号，比如：NM 123 456 789。 |
 | IC | !ic (`:`mode) (user) | [Info Card](./player.html#info) | 查询迷你信息 | *Information 功能的明信片设计。* |
 | IM | !im (user) | [I'm Mapper](./player.html#immapper) | 查询谱师信息 | - |
 | ML | !ml **[mid]** (operate) | [Match Listen](./tournament.html#matchlisten) | 监听比赛房间 | **mid**：比赛房间号<br />**operate**：操作，比如开始和停止 start/stop |

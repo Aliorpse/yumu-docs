@@ -1,19 +1,15 @@
 ---
 title: 查询条件
 icon: filter
-order: 13
-date: 2025-10-20
-category: 指令
+order: 1
+category: 字段
 tag:
-  - 指令
+  - 字段
   - osu!
   - osu
   - 查询条件
   - filter
-sticky: false
-star: false
 footer: Yumu Docs - 查询条件
-copyright: false
 ---
 
 # 查询条件
@@ -245,9 +241,9 @@ copyright: false
 | 谱师 | charter、mapper | c | 字符串 |
 | 编号 | id | i | 整数 |
 | 难度 | difficulty、diff | d | 1-15 的数字（可带 `+` 号） |
-| 难度 | difficulty、diff | d | basic，advanced 等或绿、黄等或 b、a 等。请参阅：[难度对应表](./maimai.md#maifind) |
+| 难度 | difficulty、diff | d | basic，advanced 等或绿、黄等或 b、a 等。请参阅：[难度对应表](../../help/maimai.md#maifind) |
 | 框体 | cabinet、cab | n | 标准、豪华或 sd、dx 或 standard、deluxe |
-| 版本 | version | v | 版本号，请参阅：[版本号对应表](./maimai.md#version) |
+| 版本 | version | v | 版本号，请参阅：[版本号对应表](../../help/maimai.md#version) |
 | 歌曲名 | title、name、song | t | 字符串 |
 | 别名 | alias | l | 字符串 |
 | 歌手名 | artist、singer、art | a | 字符串 |
@@ -273,9 +269,9 @@ copyright: false
 | 谱师 | charter、mapper | c | 字符串 |
 | 编号 | id | i | 整数 |
 | 难度 | difficulty、diff | d | 1-15 的数字（可带 `+` 号） |
-| 难度 | difficulty、diff | d | basic，advanced 等或绿、黄等或 b、a 等。请参阅：[难度对应表](./maimai.md#maifind) |
+| 难度 | difficulty、diff | d | basic，advanced 等或绿、黄等或 b、a 等。请参阅：[难度对应表](../../help/maimai.md#maifind) |
 | 框体 | cabinet、cab | n | 标准、豪华或 sd、dx 或 standard、deluxe |
-| 版本 | version | v | 版本号，请参阅：[版本号对应表](./maimai.md#version) |
+| 版本 | version | v | 版本号，请参阅：[版本号对应表](../../help/maimai.md#version) |
 | 歌曲名 | title、name、song | t | 字符串 |
 | 别名 | alias | l | 字符串 |
 | 歌手名 | artist、singer、art | a | 字符串 |

@@ -134,7 +134,7 @@ copyright: false
   - 支持使用 ::icon fa-brands fa-qq:: QQ 查询，输入格式为：qq=114514。
   - 支持使用 ::slash:: UID 查询，输入格式为：uid=1919810。
   - 支持使用 ::at:: @ 查询，输入格式为：@nana7michan。
-- **::filter:: 查询条件**：三选一填，请参阅：[::filter:: 查询条件·玩家查询器](./filter.md#player)
+- **::filter:: 查询条件**：三选一填，请参阅：[::filter:: 查询条件·玩家查询器](../tips/field/filter.md#player)
 
 ## ::link:: 4 获取主页链接 !ymmutual (!mu) {id=mutual}
 

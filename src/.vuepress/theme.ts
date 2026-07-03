@@ -4,7 +4,6 @@ import sidebar from "./sidebar";
 
 export default hopeTheme({
     author: "YumuMuzi",
-    copyright: "YumuBot",
     darkmode: "switch",
 
     favicon: "/favicon.ico",
@@ -25,11 +24,10 @@ export default hopeTheme({
 
     docsDir: "src", // navbar
     navbar,
+    navbarAutoHide: "mobile",
 
     // sidebar
     sidebar,
-
-    footer: "Yumu Docs",
 
     displayFooter: true,
 
@@ -83,6 +81,7 @@ export default hopeTheme({
         imgSize: true,
         include: true,
         mark: true,
+        obsidianImgSize: true,
         playground: {
             presets: ["ts", "vue"],
         },
