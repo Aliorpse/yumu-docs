@@ -74,6 +74,8 @@ order: 6
 
 :::::
 
+![最好成绩面板](https://yumemuzi.s-ul.eu/yumunext/H8bDLOj2)
+
 ::: warning 注意
 
 如果玩家输入的内容，靠后有一个空格，并附带一个 1-100 的数字，将会将其匹配到 ::ruler-horizontal:: 偏移量或区间中。
